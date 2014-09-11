@@ -15,4 +15,4 @@ Windows .exe file included for people who can't/won't install Python. Just drag 
 
 Sounds are padded up to a multiple of 32 samples for use with the 3rd channels X: play long wave command.
 
-Currently if the sound is over 65504 samples (about 34 seconds) the remainder is lost. We could auto slice into multiple raw files, but due to how tempo works in the tracker, it'd be hard to line the slices up exactly. I think it's better if a wav editor is used to cut the sample into shorter samples on the beat.
+Currently if the sound is over 65504 samples (about 34 seconds) the remainder is lost. We could auto slice into multiple raw files, but due to how tempo works in the tracker, it'd be hard to line the slices up exactly. I think it's better if a wav editor is used to cut the sample into shorter samples on the beat. In any case, [waves this big will be too big for the song to be compiled to a ROM.](https://rv6502.ca/wiki/index.php?title=Game_Boy_Tracker#Compile_Multi-Bank_ROM_.28Unlimited_Size_.2A.29)
