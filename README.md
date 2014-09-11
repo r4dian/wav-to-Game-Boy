@@ -1,7 +1,7 @@
 Wav to Game Boy converter
 =========================
 
-Batch convert sounds files to 8-bit unsigned raw files for use the [Paragon5 tracker](https://rv6502.ca/post/2014/07/17/game-boy-tracker-replay-routines-released/) (AKA Beyond Tracker, AKA ...)
+Batch convert sound files to 8-bit unsigned raw files for use the [Paragon5 tracker](https://rv6502.ca/post/2014/07/17/game-boy-tracker-replay-routines-released/) (AKA Beyond Tracker, AKA ...)
 Converts anything your version of sox can read.
 
 Requirements: A version of [sox.exe](http://sourceforge.net/projects/sox/files/sox/14.4.1/sox-14.4.1a-win32.zip/download) (and its accompanying zlib1.dll) in the same directory.
