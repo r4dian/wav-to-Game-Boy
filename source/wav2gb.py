@@ -11,9 +11,9 @@ def conv(files):
 		if samples <= 65504:
 			extra = samples % 32
 			if extra == 0:
-				subprocess.call('sox "converted/'+name+'.tmp.wav" -b 8 -e un "converted/'+name+'.raw"')
+				subprocess.call('sox "converted/'+name+'.tmp.wav" -b 8 --no-dither -e un "converted/'+name+'.raw"')
 			else:
-				print('sox "converted/'+name+'.tmp.wav" -b 8 -e un "converted/'+name+'.raw" pad '+str(32-extra)+'s@'+str(samples)+'s')
+				print('sox "converted/'+name+'.tmp.wav" -b 8 --no-dither -e un "converted/'+name+'.raw" pad '+str(32-extra)+'s@'+str(samples)+'s')
 				subprocess.call('sox "converted/'+name+'.tmp.wav" -b 8 -e un "converted/'+name+'.raw" pad '+str(32-extra)+'s@'+str(samples)+'s')
 		else:
 			print("The downsampled. mono "+name +" is still too long at "+str(samples)+" samples. Converted the 1st 65504 samples only.")
